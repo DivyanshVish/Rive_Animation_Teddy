@@ -129,8 +129,8 @@ class _LoginFormState extends State<LoginForm> {
             Container(
               alignment: Alignment.center,
               width: 400,
-              padding: const EdgeInsets.only(bottom: 15),
-              margin: const EdgeInsets.only(bottom: 15 * 4),
+              padding: const EdgeInsets.only(bottom: 10),
+              margin: const EdgeInsets.only(bottom: 10 ),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius:
@@ -142,7 +142,7 @@ class _LoginFormState extends State<LoginForm> {
                     padding: const EdgeInsets.symmetric(horizontal: 15),
                     child: Column(
                       children: [
-                        const SizedBox(height: 15 * 2),
+                        const SizedBox(height: 10 * 2),
                         TextField(
                           controller: _emailController,
                           onTap: lookOnTheTextField,
@@ -167,7 +167,7 @@ class _LoginFormState extends State<LoginForm> {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 15),
+                        const SizedBox(height: 10),
                         TextField(
                           controller: _passwordController,
                           onTap: handsOnTheEyes,
@@ -207,14 +207,12 @@ class _LoginFormState extends State<LoginForm> {
                                 const Text("Remember me"),
                               ],
                             ),
-                            SizedBox(width: double.infinity,
-                              child: ElevatedButton(
-                                onPressed: login,
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor: const Color(0xffb04863),
-                                ),
-                                child: const Text("Login"),
+                            ElevatedButton(
+                              onPressed: login,
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: const Color(0xffb04863),
                               ),
+                              child: const Text("Login"),
                             ),
                           ],
                         ),
